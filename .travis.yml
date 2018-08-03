@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+    - node_modules
+env:
+  - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: e429f8fe-6aee-45ae-9a61-1cc33a34771a
+  app: Trello-testing
+  on:
+    repo: Blubagoo/trello-testing
